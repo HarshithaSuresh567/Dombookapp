@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Book Management Page</h1>
+    <div style="text-align:center; margin-bottom: 20px;" >
+        <button onclick=" window.location.href='index.html'" > Back to Home</button>
+    </div>
+
+    <!-- Add books-->
+     <div id="formContainer">
+        <h3> Add Book </h3>
+        <input type="text" id="title" placeholder="Book Title" style="width: 100%"><br>
+        <input type="text" id="author" placeholder="Auther Name" style="width: 100%"><br>
+
+        <select id="category" style="width:100%">
+            <option value="">Select Category</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Comedy"> Comedy</option>
+            <option value="Technical"> Technical</option>
+
+        </select><br>
+        <button onClick="addBook()" style="width:100%; background-color: lightgray; color: white;"> Add Book</button>
+     </div>
+     <div class="topControls">
+        <button onclick="sortBooksAZ()" sort A-Z</button>
+        <button onclick="sortBooksZA()" sort Z-A</button>
+
+        <select id="filterCategory" onchane ="filterBooks()" >
+            <option value="All" > All</option>
+            <option value="Fiction"> Fiction</option>
+            <option value="Comedy" >Comedy</option>
+            <option value="Technical"> Techniacal</option>
+        </select>
+     </div>
+
+
+</body>
+</html>
